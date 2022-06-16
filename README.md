@@ -3,10 +3,9 @@
 ## The server
 
 - The server creates and runs a broker.
-- The server then creates a Publisher and a Consumer.
-- The Publisher keeps sending messages to a topic.
-- The Consumer keeps reading messages from a queue.
-
+- The server then creates a TopicProducer and a QueueConsumer.
+- The TopicProducer keeps sending messages to a topic.
+- The QueueConsumer keeps reading messages from a queue.
 
 ## The client
 - The client sends a message to the queue.
