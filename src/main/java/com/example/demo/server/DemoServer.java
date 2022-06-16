@@ -1,7 +1,7 @@
 package com.example.demo.server;
 
 import com.example.demo.Configuration;
-import com.example.demo.server.Consumer;
+import com.example.demo.server.QueueConsumer;
 import java.net.URI;
 import org.apache.activemq.broker.BrokerService;
 import org.apache.activemq.broker.TransportConnector;
@@ -30,10 +30,10 @@ public class DemoServer {
     
     void startThreads() {
         //start the publisher thread
-        new Thread( new Publisher() ).start();
+        new Thread( new TopicProducer() ).start();
         
         //start the consuer thread
-        new Thread( new Consumer() ).start();
+        new Thread( new QueueConsumer() ).start();
     }
     
     BrokerService broker;

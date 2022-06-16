@@ -24,7 +24,7 @@ import org.slf4j.LoggerFactory;
 
 This class receives messages of a topic: Configuration.TOPIC_NAME 
  */
-public class Subscriber {
+public class TopicConsumer {
 
     public void run()
             throws JMSException {
@@ -77,6 +77,6 @@ public class Subscriber {
     
     int timeout = 10000; /*10 seconds*/
 
-    private static final Logger logger  = LoggerFactory.getLogger(Subscriber.class);
+    private static final Logger logger  = LoggerFactory.getLogger(TopicConsumer.class);
 
 }

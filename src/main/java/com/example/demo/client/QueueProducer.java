@@ -5,7 +5,7 @@
 package com.example.demo.client;
 
 import com.example.demo.Configuration;
-import com.example.demo.server.Publisher;
+import com.example.demo.server.TopicProducer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 This class sends messages to a queue: Configuration.QUEUE_NAME 
 
  */
-public class Producer {
+public class QueueProducer {
 
     public void run() {
         try { // Create a connection factory.
@@ -64,5 +64,5 @@ public class Producer {
         }
     }
 
-    private static final Logger logger = LoggerFactory.getLogger(Producer.class);
+    private static final Logger logger = LoggerFactory.getLogger(QueueProducer.class);
 }

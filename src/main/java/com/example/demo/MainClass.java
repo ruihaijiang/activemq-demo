@@ -5,7 +5,7 @@
 package com.example.demo;
 
 import com.example.demo.client.DemoClient;
-import com.example.demo.client.Producer;
+import com.example.demo.client.QueueProducer;
 import com.example.demo.server.DemoServer;
 
 /**

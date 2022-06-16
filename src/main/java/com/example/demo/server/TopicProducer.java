@@ -27,7 +27,7 @@ import org.slf4j.LoggerFactory;
 This class sends messages to a topic: Configuration.TOPIC_NAME 
 */
 
-public class Publisher implements Runnable {
+public class TopicProducer implements Runnable {
 
     @Override
     public void run() {
@@ -90,6 +90,6 @@ public class Publisher implements Runnable {
     private Session session;
     private MessageProducer messageProducer;
 
-    private static final Logger logger = LoggerFactory.getLogger(Publisher.class);
+    private static final Logger logger = LoggerFactory.getLogger(TopicProducer.class);
 
 }

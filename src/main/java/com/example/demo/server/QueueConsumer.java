@@ -19,7 +19,7 @@ import org.slf4j.LoggerFactory;
 /*
 This class reads messages from a queue: Configuration.QUEUE_NAME 
  */
-public class Consumer implements Runnable {
+public class QueueConsumer implements Runnable {
 
     @Override
     public void run() {
@@ -66,6 +66,6 @@ public class Consumer implements Runnable {
         }
     }
 
-    private static final Logger logger = LoggerFactory.getLogger(Consumer.class);
+    private static final Logger logger = LoggerFactory.getLogger(QueueConsumer.class);
 
 }

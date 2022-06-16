@@ -4,7 +4,7 @@
  */
 package com.example.demo.client;
 
-import com.example.demo.server.Consumer;
+import com.example.demo.server.QueueConsumer;
 
 /**
  *
@@ -12,10 +12,10 @@ import com.example.demo.server.Consumer;
  */
 public class DemoClient {
      public void run() throws Exception {
-        Producer producer = new Producer();	        
+        QueueProducer producer = new QueueProducer();	        
         producer.run(  );  
         
-        Subscriber subscriber = new Subscriber();        
+        TopicConsumer subscriber = new TopicConsumer();        
         subscriber.run(  );  
     }
        
